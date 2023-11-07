@@ -16,8 +16,6 @@ alias cifra='~/.scripts/cifra.sh'
 alias droplet='ssh frah@49.12.198.196'
 alias pi='ssh frah@192.168.178.88'
 alias shut='shutdown now'
-#alias synctosite='rsync -rv --delete --exclude '.git' ~/Documents/blog/ frah@188.166.125.146:/var/www/francesconegriolli.com/'
-#alias syncfromsite='rsync -av frah@188.166.125.146:/var/www/francesconegriolli.com/ ~/Documents/blog/'
 alias meteo='curl wttr.in/Lodi'
 alias clog='sh ~/Documents/progetti/clogs/clogs.sh'
 alias fabbro='ssh francesco@marchesiilfabbro.it'
@@ -28,7 +26,7 @@ alias vpnoff='sudo wg-quick down wg0'
 alias colemak='sudo systemctl start kmonad'
 alias screensaver='/home/frah/.scripts/screensaver.sh'
 alias peaclock='peaclock --config-dir /home/frah/.config/peaclock'
-
+alias giardino='$HOME/Documents/siti/giocolierementale/nuovoGiardino.sh'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesRepo/ --work-tree=$HOME'
 
 export PATH=/opt/lampp/bin/:$PATH
