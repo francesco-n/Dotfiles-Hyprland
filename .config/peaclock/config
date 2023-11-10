@@ -16,7 +16,7 @@
 
 # set the x y block size, the width and height of an individual block composing
 # the clock
-block 2 1
+block 7 4
 # block-x 2
 # block-y 1
 
@@ -112,7 +112,7 @@ set seconds on
 set date off
 
 # auto size the clock to fill the screen, overrides the current x y block size
-set auto-size on
+set auto-size off
 
 # auto size the clock to use the aspect ratio set by the command 'ratio',
 # overrides the current x y block size and auto-size

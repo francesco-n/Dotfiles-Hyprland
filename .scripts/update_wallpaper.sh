@@ -16,13 +16,14 @@ if [ "$selected" ]; then
 
     echo "Changing theme..."
     # Update wallpaper with pywal
-    wal  -q -i ~/Pictures/Wallpapers/$selected -n #aggiungere -l se si vuole un tema chiaro
+    wal -q -i ~/Pictures/Wallpapers/$selected -n #aggiungere -l se si vuole un tema chiaro
+
 
     hyprctl hyprpaper preload $HOME/Pictures/Wallpapers/$selected
-    sleep .3
+    sleep 1
     hyprctl hyprpaper wallpaper "eDP-1,$HOME/Pictures/Wallpapers/$selected"
-    sleep .3
-    hyprctl hyprpaper unload all
+    #sleep .3
+    #hyprctl hyprpaper unload all
 
     # Wait for 1 sec
     sleep 1
