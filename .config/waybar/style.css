@@ -54,8 +54,8 @@ window#waybar {
 }
 #workspaces button.active{
     /* background-color: transparent; */
-    background-color: @background;
-    border-radius: 0px;
+    background-color: @color4;
+    border-radius: 8px;
 }
 
 
