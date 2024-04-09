@@ -14,7 +14,7 @@ window {
 	/*font-weight: bold;*/
 }
 window#waybar {
-    background: @background;
+    background: transparent;
 }
 /*-----module groups----*/
 .modules-right {

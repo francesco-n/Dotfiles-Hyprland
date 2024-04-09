@@ -31,7 +31,9 @@
 (defalias
   ext (tap-next bspc (layer-toggle navigation))
   ;;ctr (tap-next esc ctl)
-  alg (tap-next ralt (layer-toggle symbols)))
+  alg (tap-next ralt (layer-toggle symbols))
+  rha (tap-next spc (layer-toggle onehandRight))
+  )
 
 
 (deflayer colemak
@@ -50,6 +52,23 @@
   lctl lmet lalt           spc            @alg rmet cmp  rctl
 )
 
+
+(deflayer onehandLeft
+  esc  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    f    p    b    _    u    i    o    p    [    ]    \
+  @ext a    r    s    t    g    ret    j    k    l    ;    '    ret
+  lsft x    c    d    v    z    n    m    ,    .    /    rsft
+  lctl lmet lalt           @rha            @alg rmet cmp  rctl
+)
+
+(deflayer onehandRight
+  esc  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  ;    y    u    l    j    y    u    i    o    p    [    ]    \
+  @ext o    i    e    n    m    h    j    k    l    ;    '    ret
+  lsft .    .    ,    h    k    n    m    ,    .    /    rsft
+  lctl lmet lalt           @rha            @alg rmet cmp  rctl
+)
+
 (deflayer navigation
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    up   _    _    _    _    _    _    _    _    _    _    _
@@ -65,10 +84,11 @@
   cte #(ralt c u t e)
   qrt (tap-next (layer-switch qwerty) lsft)
   col (tap-next (layer-switch colemak) rctl)
+  one (tap-next (layer-switch onehandLeft) 0)
 )
 
 (deflayer symbols
-  _    @hrt @rdr @grn @cte _    _    _    _    _    _    _    _    _
+  _    @hrt @rdr @grn @cte _    _    _    _    _    @one    _    _    _
   _    _    _    _    _    _    _    _    ù    _    _    _    _    _
   _    à    _    _    _    _    _    _    è    ì    ò    _    _
   @qrt _    _    _    _    _    _    _    _    _    _    _
